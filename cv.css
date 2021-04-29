@@ -1,0 +1,223 @@
+.clear {clear: both;}
+
+html {
+  font-family: 'Rokkitt', serif;
+  background-color: #444;
+  font-size: 0.9em;
+}
+
+article p {
+  margin-top: -3px;
+}
+
+section {
+	border-top: 1px solid #668cff;
+	padding: -5px 0 0;
+}
+
+section:first-child {
+	border-top: 5px;
+  padding: 10px 0 0;
+  width: 100%;
+}
+
+#cv {
+  background-color: #f2f2f2;
+  margin: auto;
+  width: 40%;
+  margin: 10px auto;
+  min-width: 320px;
+  float: none;
+}
+
+#name {
+  float: left;
+  margin-top: 2px;
+  margin-left: 50px;
+}
+
+#name h1 {
+	font-size: 2em;
+	font-weight: 700;
+	margin-bottom: -30px;
+  color: #444;
+}
+
+#name h2 {
+	font-size: 1.5em;
+	margin-left: 2px;
+  font-weight: lighter;
+	color: #444;
+}
+
+#contactDetails {
+  float: right;
+}
+
+#contactDetails a {
+	color: #444;
+  text-decoration: none;
+	font-size: 1.25em;
+	margin-top: 2px;
+  margin-right: 50px;
+  display: block;
+	min-height: 20px;
+	padding: 0 0 0 30px;
+}
+
+#contactDetails ul li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#mainArea {
+  color: #444;
+  clear: both;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+#mainDetails {
+	border-bottom: 4px solid #668cff;
+	background: #ededed;
+}
+
+#headshot {
+	width: 10%;
+	float: left;
+  padding: 20px;
+	margin-left: 50px;
+}
+
+#headshot img {
+	width: 120%;
+	height: auto;
+	border-radius: 100%;
+  padding: 5px;
+  background-color: #668cff;
+}
+
+.sectionTitle {
+	float: left;
+	width: 25%;
+}
+
+.sectionContent {
+	float: right;
+	width: 72.5%;
+  margin-bottom: -5px;
+}
+
+.sectionTitle h1 {
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	font-size: 0.9em;
+	color: grey;
+}
+
+.sectionContent h2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	margin-bottom: 2px;
+}
+
+.subDetails {
+  margin-top: -5px;
+	font-size: 0.8em;
+	font-style: italic;
+	margin-bottom: 3px;
+}
+
+.keySkills {
+	list-style-type: none;
+	-moz-column-count:3;
+	-webkit-column-count:3;
+	column-count:3;
+  padding-left: 0;
+	margin-bottom: 20px;
+	font-size: 1em;
+	color: #444;
+}
+
+.unicourses {
+  list-style-type: none;
+  padding-left: 10px;
+  margin-top: 0;
+  font-size: 0.8em;
+  color: #444;
+}
+
+.jobstuff {
+  list-style-type: none;
+  padding-left: 10px;
+  margin-top: -10px;
+  font-size: 0.8em;
+  color: #444;
+}
+
+.nobottom {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 0.9em;
+}
+
+.subheading{
+  margin: 5px;
+}
+
+.courses ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact-info li.phone a {
+	background-image: url('phone.png');
+  background-repeat: no-repeat;
+	background-size: 20px;
+}
+
+.contact-info li.mail a {
+	background-image: url('mail.png');
+  background-repeat: no-repeat;
+	background-size: 20px;
+}
+
+.contact-info li.github a {
+	background-image: url('github.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+	background-size: 15px;
+  margin-left: 3px;
+}
+
+.contact-info li.linkedin a {
+	background-image: url('linkedin.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+	background-size: 15px;
+  margin-left: 3px;
+}
+
+@media print {
+    html {
+      background-color: transparent;
+    }
+
+    #cv {
+        width: 100%;
+        background-color: transparent;
+    }
+
+    #mainDetails {
+      background-color: transparent;
+    }
+
+    #name h1 {
+    	font-size: 1.5em;
+      margin-bottom: -10px;
+    }
+
+    #name h2 {
+    	font-size: 1em;
+    }
+}

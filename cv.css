@@ -198,6 +198,17 @@ section:first-child {
   margin-left: 3px;
 }
 
+.column {
+  float: left;
+  width: 34;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 @media print {
     html {
       background-color: transparent;

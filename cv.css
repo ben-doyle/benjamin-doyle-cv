@@ -269,7 +269,8 @@ section.education {
 	background-size: 15px;
 }
 
-#phone-container {
+.contact-info li.phone #phone-container,
+.contact-info li.phone #phone-container a {
   color: #444;
   text-decoration: none;
   font-size: 0.9em;
@@ -285,19 +286,6 @@ section.education {
   background-size: 15px;
 }
 
-#phone-container a {
-  color: inherit;
-  text-decoration: none;
-  font-size: inherit;
-  margin: 0;
-  padding: 0;
-  display: inline;
-  min-height: auto;
-  line-height: inherit;
-  background: none;
-}
-
-/* Desktop Styles - Ensure proper layout on larger screens */
 @media screen and (min-width: 769px) {
   #mainDetails {
     min-height: 140px;

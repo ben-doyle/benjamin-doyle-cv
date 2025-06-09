@@ -21,22 +21,22 @@
       return atob(encoded);
     }
     
-    window.addEventListener('beforeprint', function() {
-      const container = document.getElementById('phone-container');
-      if (container) {
-        const phoneHref = decodePhone(phoneData.href);
-        const phoneDisplay = decodePhone(phoneData.display);
-        container.innerHTML = `<a href="${phoneHref}">${phoneDisplay}</a>`;
-      }
-    });
+          window.addEventListener('beforeprint', function() {
+        const container = document.getElementById('phone-container');
+        if (container) {
+          const phoneHref = decodePhone(phoneData.href);
+          const phoneDisplay = decodePhone(phoneData.display);
+          container.outerHTML = `<a href="${phoneHref}">${phoneDisplay}</a>`;
+        }
+      });
     
     // Hide phone number again after printing
-    window.addEventListener('afterprint', function() {
-      const container = document.getElementById('phone-container');
-      if (container) {
-        container.innerHTML = 'Available on request';
-      }
-    });
+          window.addEventListener('afterprint', function() {
+        const phoneLink = document.querySelector('.contact-info li.phone a');
+        if (phoneLink) {
+          phoneLink.outerHTML = '<span id="phone-container">Available on request</span>';
+        }
+      });
   </script>
 </head>
 

@@ -11,40 +11,50 @@ article p {
 }
 
 section {
-	border-top: 1px solid #668cff;
-	padding: -5px 0 0;
+	padding: 20px 0 0;
+	margin-bottom: 15px;
 }
 
 section:first-child {
-	border-top: 5px;
-  padding: 10px 0 0;
+	border-top: none;
+  padding: 15px 0 0;
   width: 100%;
+}
+
+section.work-experience,
+section.side-projects,
+section.education {
+	border-top: 2px solid #668cff;
 }
 
 #cv {
   background-color: #f2f2f2;
   margin: auto;
-  width: 40%;
+  width: 75%;
   margin: 10px auto;
   min-width: 320px;
+  max-width: 800px;
   float: none;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 #name {
   float: left;
-  margin-top: 2px;
-  margin-left: 50px;
+  margin-top: 40px;
+  margin-left: 20px;
+  width: 250px;
 }
 
 #name h1 {
-	font-size: 2em;
+	font-size: 1.8em;
 	font-weight: 700;
-	margin-bottom: -30px;
+	margin-bottom: -15px;
   color: #444;
 }
 
 #name h2 {
-	font-size: 1.5em;
+	font-size: 1.2em;
 	margin-left: 2px;
   font-weight: lighter;
 	color: #444;
@@ -52,17 +62,22 @@ section:first-child {
 
 #contactDetails {
   float: right;
+  margin-top: 45px;
+  margin-right: 30px;
+  width: 250px;
+  text-align: left;
 }
 
 #contactDetails a {
 	color: #444;
   text-decoration: none;
-	font-size: 1.25em;
-	margin-top: 2px;
-  margin-right: 50px;
+	font-size: 0.9em;
+	margin-bottom: 3px;
+  margin-right: 0;
   display: block;
-	min-height: 20px;
-	padding: 0 0 0 30px;
+	min-height: 18px;
+	padding: 1px 0 1px 26px;
+  line-height: 1.4;
 }
 
 #contactDetails ul li {
@@ -83,14 +98,14 @@ section:first-child {
 }
 
 #headshot {
-	width: 10%;
+	width: 120px;
 	float: left;
   padding: 20px;
-	margin-left: 50px;
+	margin-left: 30px;
 }
 
 #headshot img {
-	width: 120%;
+	width: 100%;
 	height: auto;
 	border-radius: 100%;
   padding: 5px;
@@ -113,6 +128,7 @@ section:first-child {
 	font-style: italic;
 	font-size: 0.9em;
 	color: grey;
+	border-bottom: none; /* Remove any borders on desktop */
 }
 
 .sectionContent h2 {
@@ -122,21 +138,42 @@ section:first-child {
 }
 
 .subDetails {
-  margin-top: -5px;
-	font-size: 0.8em;
 	font-style: italic;
 	margin-bottom: 3px;
 }
 
 .keySkills {
-	list-style-type: none;
-	-moz-column-count:3;
-	-webkit-column-count:3;
-	column-count:3;
-  padding-left: 0;
-	margin-bottom: 20px;
 	font-size: 1em;
 	color: #444;
+  margin-bottom: 20px;
+}
+
+.keySkills .row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+.keySkills .column {
+  flex: 1 1 33.333%;
+  min-width: 0;
+}
+
+.keySkills .column strong {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.keySkills .column ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.keySkills .column li {
+  margin-bottom: 4px;
+  padding-left: 0;
 }
 
 .unicourses {
@@ -150,7 +187,6 @@ section:first-child {
 .jobstuff {
   list-style-type: none;
   padding-left: 10px;
-  margin-top: -10px;
   font-size: 0.8em;
   color: #444;
 }
@@ -170,65 +206,395 @@ section:first-child {
   padding-left: 0;
 }
 
+/* Side Projects Styling */
+.project-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.project-list li {
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.sectionContent h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  margin: 15px 0 5px 0;
+  color: #444;
+}
+
+.sectionContent h3 a {
+  color: #668cff;
+  text-decoration: none;
+}
+
+.sectionContent h3 a:hover {
+  text-decoration: underline;
+}
+
 .contact-info li.phone a {
-	background-image: url('phone.png');
+	background-image: url('phone.svg');
   background-repeat: no-repeat;
-	background-size: 20px;
+  background-position: left center;
+	background-size: 15px;
 }
 
 .contact-info li.mail a {
-	background-image: url('mail.png');
+	background-image: url('mail.svg');
   background-repeat: no-repeat;
-	background-size: 20px;
+  background-position: left center;
+	background-size: 15px;
 }
 
 .contact-info li.github a {
-	background-image: url('github.png');
+	background-image: url('github.svg');
   background-repeat: no-repeat;
   background-position: left center;
 	background-size: 15px;
-  margin-left: 3px;
 }
 
 .contact-info li.linkedin a {
-	background-image: url('linkedin.png');
+	background-image: url('linkedin.svg');
   background-repeat: no-repeat;
   background-position: left center;
 	background-size: 15px;
-  margin-left: 3px;
 }
 
-.column {
-  float: left;
-  width: 34;
+.contact-info li.website a {
+	background-image: url('react.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+	background-size: 15px;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+/* Desktop Styles - Ensure proper layout on larger screens */
+@media screen and (min-width: 769px) {
+  #mainDetails {
+    min-height: 140px;
+    padding: 10px 0 20px 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  
+  #headshot {
+    flex: 0 0 auto;
+    margin: 0 0 0 30px;
+    padding: 10px;
+  }
+  
+  #name {
+    flex: 1;
+    margin: 0 20px;
+    float: none;
+    margin-top: 0;
+  }
+  
+  #contactDetails {
+    flex: 0 0 auto;
+    margin: 0 30px 0 0;
+    float: none;
+    margin-top: 0;
+  }
+  
+  #contactDetails ul {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Tablet Responsive Styles */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .keySkills .row {
+    gap: 15px;
+  }
+
+  .keySkills .column {
+    flex: 1 1 33.333%;
+    min-width: 0;
+  }
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  #cv {
+    width: 95%;
+    margin: 5px auto;
+  }
+
+  #mainDetails {
+    text-align: center;
+    padding: 20px 15px 15px 15px;
+    display: block;
+  }
+
+  #headshot {
+    width: 100px;
+    float: none;
+    margin: 0 auto 15px auto;
+    padding: 0;
+    text-align: center;
+    display: block;
+  }
+
+  #headshot img {
+    width: 100%;
+    max-width: 100px;
+  }
+
+  #name {
+    float: none;
+    margin: 0 auto 15px auto;
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+
+  #name h1 {
+    font-size: 1.8em;
+    margin-bottom: -10px;
+    text-align: center;
+  }
+
+  #name h2 {
+    font-size: 1.3em;
+    margin: 8px auto 15px auto;
+    text-align: center;
+  }
+
+  #contactDetails {
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+  }
+
+  #contactDetails ul {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  #contactDetails a {
+    margin: 0 auto 6px auto;
+    font-size: 1.1em;
+    padding-left: 25px;
+    min-height: 22px;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+  }
+
+  #mainArea {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .sectionTitle {
+    float: none;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+
+  .sectionTitle h1 {
+    font-size: 1.0em;
+    border-bottom: 1px solid #668cff;
+    padding-bottom: 2px;
+    margin-bottom: 8px;
+    color: grey;
+  }
+
+  .sectionContent {
+    float: none;
+    width: 100%;
+  }
+
+  section {
+    margin-bottom: 20px;
+    padding-top: 15px;
+  }
+
+  section.work-experience,
+  section.side-projects,
+  section.education {
+    border-top: 1px solid #668cff;
+  }
+
+  section:first-child {
+    border-top: none;
+    padding-top: 10px;
+  }
+
+  .keySkills .row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .keySkills .column {
+    flex: none;
+    width: 100%;
+    min-width: auto;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 0.85em;
+  }
+
+  #cv {
+    width: 98%;
+    margin: 2px auto;
+  }
+
+  #mainDetails {
+    padding: 15px 10px 12px 10px;
+  }
+
+  #headshot {
+    width: 90px;
+    margin: 0 auto 12px auto;
+  }
+
+  #headshot img {
+    max-width: 90px;
+  }
+
+  #name {
+    margin: 0 auto 12px auto;
+  }
+
+  #name h1 {
+    font-size: 1.7em;
+    margin-bottom: -8px;
+  }
+
+  #name h2 {
+    font-size: 1.2em;
+    margin: 6px auto 12px auto;
+  }
+
+  #contactDetails {
+    margin: 0 auto;
+  }
+
+  #contactDetails a {
+    font-size: 1.0em;
+    padding-left: 22px;
+    margin-bottom: 5px;
+    min-height: 20px;
+  }
+
+  #mainArea {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .contact-info li.phone a,
+  .contact-info li.mail a,
+  .contact-info li.github a,
+  .contact-info li.linkedin a,
+  .contact-info li.website a {
+    background-size: 12px;
+  }
 }
 
 @media print {
     html {
       background-color: transparent;
+      font-size: 0.85em;
     }
 
     #cv {
         width: 100%;
         background-color: transparent;
+        margin: 0;
     }
 
     #mainDetails {
       background-color: transparent;
+      padding: 15px 10px 20px 10px;
+    }
+
+    #headshot {
+      width: 100px;
+      float: none;
+      margin: 0 auto 15px auto;
+      padding: 0;
+      text-align: center;
+      display: block;
+    }
+
+    #headshot img {
+      width: 100%;
+      max-width: 100px;
+      background-color: transparent;
+      padding: 2px;
+    }
+
+    #name {
+      float: none;
+      margin: 0 auto 15px auto;
+      text-align: center;
+      width: 100%;
+      display: block;
     }
 
     #name h1 {
     	font-size: 1.5em;
       margin-bottom: -10px;
+      text-align: center;
     }
 
     #name h2 {
     	font-size: 1em;
+      margin: 8px auto 15px auto;
+      text-align: center;
+    }
+
+    #contactDetails {
+      float: none;
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+      display: block;
+    }
+
+    #contactDetails ul {
+      text-align: center;
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+    }
+
+    #contactDetails ul li {
+      display: inline-block;
+      margin: 0 10px 8px 0;
+    }
+
+    #contactDetails a {
+      margin: 0;
+      font-size: 0.9em;
+      padding-left: 20px;
+      min-height: 18px;
+      display: inline-block;
+      text-align: left;
+      position: relative;
+    }
+
+    #mainArea {
+      margin-left: 15px;
+      margin-right: 15px;
+      clear: both;
+    }
+
+    .clear {
+      clear: both;
     }
 }

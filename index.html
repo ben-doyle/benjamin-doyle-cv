@@ -11,6 +11,33 @@
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
   </script>
   <script defer src="/_vercel/insights/script.js"></script>
+  <script>
+    const phoneData = {
+      href: "dGVsOis2MTQyMzc0ODMxMg==", 
+      display: "MDQyMzc0ODMxMg=="
+    };
+    
+    function decodePhone(encoded) {
+      return atob(encoded);
+    }
+    
+    window.addEventListener('beforeprint', function() {
+      const container = document.getElementById('phone-container');
+      if (container) {
+        const phoneHref = decodePhone(phoneData.href);
+        const phoneDisplay = decodePhone(phoneData.display);
+        container.innerHTML = `<a href="${phoneHref}">${phoneDisplay}</a>`;
+      }
+    });
+    
+    // Hide phone number again after printing
+    window.addEventListener('afterprint', function() {
+      const container = document.getElementById('phone-container');
+      if (container) {
+        container.innerHTML = 'Available on request';
+      }
+    });
+  </script>
 </head>
 
 <body>
@@ -40,7 +67,7 @@
             <a href="https://linkedin.com/in/benjamin-doyle-aus">benjamin-doyle-aus</a>
           </li>
           <li class="phone">
-            <a href="tel:+61423748312">0423748312</a>
+            <span id="phone-container">Available on request</span>
           </li>
         </ul>
       </div>

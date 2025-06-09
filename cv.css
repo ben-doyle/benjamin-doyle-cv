@@ -1,7 +1,7 @@
 .clear {clear: both;}
 
 html {
-  font-family: 'Rokkitt', serif;
+  font-family: 'Rokkitt', Georgia, serif;
   background-color: #444;
   font-size: 0.9em;
 }
@@ -124,7 +124,7 @@ section.education {
 }
 
 .sectionTitle h1 {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', Arial, sans-serif;
 	font-style: italic;
 	font-size: 0.9em;
 	color: grey;
@@ -132,7 +132,7 @@ section.education {
 }
 
 .sectionContent h2 {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 1em;
 	margin-bottom: 2px;
 }
@@ -219,7 +219,7 @@ section.education {
 }
 
 .sectionContent h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 1em;
   margin: 15px 0 5px 0;
   color: #444;

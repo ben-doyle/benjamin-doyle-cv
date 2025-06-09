@@ -269,7 +269,6 @@ section.education {
 	background-size: 15px;
 }
 
-/* Phone container styling */
 #phone-container {
   color: #444;
   text-decoration: none;
@@ -280,8 +279,10 @@ section.education {
   min-height: 18px;
   padding: 1px 0 1px 26px;
   line-height: 1.4;
-  background: url(icons/phone.svg) no-repeat 4px center;
-  background-size: 12px;
+  background-image: url('phone.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 15px;
 }
 
 #phone-container a {

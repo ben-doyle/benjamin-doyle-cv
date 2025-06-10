@@ -395,7 +395,8 @@ section.education {
     padding: 0;
   }
 
-  #contactDetails a {
+  #contactDetails a,
+  #contactDetails #phone-container {
     margin: 0 auto 6px auto;
     font-size: 1.1em;
     padding-left: 25px;
@@ -500,7 +501,8 @@ section.education {
     margin: 0 auto;
   }
 
-  #contactDetails a {
+  #contactDetails a,
+  #contactDetails #phone-container {
     font-size: 1.0em;
     padding-left: 22px;
     margin-bottom: 5px;
@@ -513,6 +515,7 @@ section.education {
   }
 
   .contact-info li.phone a,
+  .contact-info li.phone #phone-container,
   .contact-info li.mail a,
   .contact-info li.github a,
   .contact-info li.linkedin a,

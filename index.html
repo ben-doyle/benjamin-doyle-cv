@@ -6,37 +6,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="cv.css">
-  <link href='https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;700&family=Roboto:ital,wght@0,400;1,400&display=swap' rel='stylesheet'>
+  <link
+    href='https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;700&family=Roboto:ital,wght@0,400;1,400&display=swap'
+    rel='stylesheet'>
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
   </script>
   <script defer src="/_vercel/insights/script.js"></script>
   <script>
     const phoneData = {
-      href: "dGVsOis2MTQyMzc0ODMxMg==", 
+      href: "dGVsOis2MTQyMzc0ODMxMg==",
       display: "MDQyMzc0ODMxMg=="
     };
-    
+
     function decodePhone(encoded) {
       return atob(encoded);
     }
-    
-          window.addEventListener('beforeprint', function() {
-        const container = document.getElementById('phone-container');
-        if (container) {
-          const phoneHref = decodePhone(phoneData.href);
-          const phoneDisplay = decodePhone(phoneData.display);
-          container.outerHTML = `<a href="${phoneHref}">${phoneDisplay}</a>`;
-        }
-      });
-    
+
+    window.addEventListener('beforeprint', function () {
+      const container = document.getElementById('phone-container');
+      if (container) {
+        const phoneHref = decodePhone(phoneData.href);
+        const phoneDisplay = decodePhone(phoneData.display);
+        container.outerHTML = `<a href="${phoneHref}">${phoneDisplay}</a>`;
+      }
+    });
+
     // Hide phone number again after printing
-          window.addEventListener('afterprint', function() {
-        const phoneLink = document.querySelector('.contact-info li.phone a');
-        if (phoneLink) {
-          phoneLink.outerHTML = '<span id="phone-container">Available on request</span>';
-        }
-      });
+    window.addEventListener('afterprint', function () {
+      const phoneLink = document.querySelector('.contact-info li.phone a');
+      if (phoneLink) {
+        phoneLink.outerHTML = '<span id="phone-container">Available on request</span>';
+      }
+    });
   </script>
 </head>
 
@@ -91,8 +93,7 @@
               public speaking and teaching, with extensive experience conducting technical and cultural interviews both
               in Australia and remotely with international teams.</p>
             <p>I have a large number of hobbies and interests, including but not limited to 3D printing, music
-              production, running, hiking, and skydiving. I am currently restoring a 1974 VW Kombi campervan, choosing
-              a manual passion to have a contrast to the digital world. It is the largest project I have undertaken and
+              production, running, hiking, and skydiving. I am currently restoring a 1974 VW Kombi campervan.
               I am enjoying learning each step of the way and restoring it to its former glory.
             </p>
           </div>
@@ -145,33 +146,44 @@
               <h2>Montu</h2>
               <p class="subDetails"><strong>Acting Group Engineering Manager</strong></p>
               <p class="subDetails">March 2025 - June 2025</p>
-              <p>In my role as Group Engineering Manager, I drove consistency, autonomy, and delivery capability 
-              across multiple engineering teams. I worked to embed a culture of proactive ownership, constructive feedback, and cross-functional collaboration.</p>
-              <p>I mentored Engineering Managers and engineers, ensuring alignment between execution and company vision. Even at my position, when possible, I was still hands-on in 
-                feature development, API and database design, and production issue resolution. I was able to use my experience in the role to help guide the team in 
-                understanding the needs of the business and the requirements of the features and systems we were building and improving.</p>
+              <p><strong>Technical Stack: </strong>Javascript, Typescript, React, NestJS, MySQL, AWS</p>
+              <p>In my role as Group Engineering Manager, I drove consistency, autonomy, and delivery capability
+                across multiple engineering teams. I worked to embed a culture of proactive ownership, constructive
+                feedback, and cross-functional collaboration.</p>
+              <p>I mentored Engineering Managers and engineers, ensuring alignment between execution and company vision.
+                Even at my position, when possible, I was still hands-on in
+                feature development, API and database design, and production issue resolution. Helping my team in 
+                understanding the needs of the business and the requirements of the features and systems we were
+                building and improving.</p>
               <p>I led engagement with clinical, compliance, and executive leaders—using technical insight and domain expertise
                 to shape both the roadmap and the broader product strategy.</p>
+              <p>I conducted technical and cultural interviews for new hires within the engineering, product and
+                delivery teams, ensuring we were hiring the right people for the right roles.</p>
             </article>
             <article>
               <h2>Montu</h2>
               <p class="subDetails"><strong>Engineering Manager 1 / Technical Lead</strong></p>
               <p class="subDetails">September 2023 - March 2025</p>
-              <p>As an Engineering Manager I led a collaborative and high-performing engineering team known as “The Quokkas”. 
-                I maintained hands-on involvement in feature development, API and database design, and production issue resolution.</p>
-              <p>I introduced and facilitated agile ceremonies, including retrospectives, sprint planning, pair programming, and code reviews. 
+              <p><strong>Technical Stack: </strong>Javascript, Typescript, React, NestJS, MySQL, AWS</p>
+              <p>As an Engineering Manager I led a collaborative and high-performing engineering team known as “The Quokkas”.
+                I maintained hands-on involvement in feature development, API and database design, and production issue
+                resolution.</p>
+              <p>I introduced and facilitated agile ceremonies, including retrospectives, sprint planning, pair
+                programming, and code reviews.
                 I created an epic ownership model to encourage autonomy, accountability, and skill rotation. </p>
-              <p>I worked closely with clinical, compliance, and business stakeholders to ensure technical solutions met regulatory and operational needs.</p>
+              <p>I worked closely with clinical, compliance, and business stakeholders to ensure technical solutions met
+                regulatory and operational needs.</p>
+              <p>I conducted technical and cultural interviews within the engineering, product and
+                delivery teams, ensuring we were hiring the right people for the right roles.</p>
             </article>
             <article>
               <h2>Montu</h2>
               <p class="subDetails"><strong>Senior Software Developer</strong></p>
               <p class="subDetails">April 2023 - September 2023</p>
+              <p><strong>Technical Stack: </strong>Javascript, Typescript, React, NestJS, MySQL, AWS</p>
               <p>I worked on delivering high-quality software solutions while tackling complex technical challenges. Our
                 largest challenges were around improving the code from where it was at, to more extensible and
                 maintainable code able to handle the growing number of patients and roles of the business.</p>
-              <p>I collaborated closely with my team, contributing to major projects and ensuring our systems ran
-                smoothly. </p>
             </article>
             <article>
               <h2>Expedia</h2>
@@ -211,14 +223,9 @@
                 learnings and updates. During this time I (outside of work) helped to support ReactBris meetup in our
                 office.</p>
               <article>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
                 <h4 class="subheading"><em>Before entering software development my background consisted of hands-on
                     technical and desktop support roles. Further experience available on request.</em></h4>
-                <p></p>
-                <p></p>
+                <br>
               </article>
 
           </div>
@@ -246,7 +253,8 @@
             <p class="subDetails"><em>Explore cities, find the best coffee spots, bars, restaurants, and outdoor
                 activities.</em></p>
             <ul class="project-list">
-              <li>A fun side project to help my friends and I find the best places to eat, drink and explore in our city.</li>
+              <li>A fun side project to help my friends and I find the best places to eat, drink and explore in our
+                city.</li>
               <li>Designed for an organisation to use, sharing only between your email domain/organisation.</li>
               <li>Find and suggest coffee spots, restaurants and easy day trips.</li>
             </ul>
